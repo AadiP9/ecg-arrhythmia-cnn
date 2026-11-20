@@ -24,6 +24,8 @@ v2 at two operating points (the 0.95 threshold was chosen on the validation pati
 | 0.50 | 89.8% | 91.7% | 57.1% | 0.698 |
 | 0.95 | 71.5% | 99.2% | 91.7% | 0.804 |
 
+At the 0.95 threshold the confusion matrix on the test patients is: 43,865 normal beats correct, 353 false alarms, 3,893 abnormal beats caught and 1,550 missed.
+
 A lower threshold catches more abnormal beats at the cost of more false alarms; a higher one does the reverse.
 
 | ROC curve and confusion matrix | Training curves |
@@ -103,6 +105,10 @@ Results vary slightly between runs and machines. The notebook sets random seeds,
 ## Possible next steps
 
 Cross-validation across patients, per-class results (AAMI classes), a simple baseline (e.g. random forest) for comparison, a second lead, and an interactive demo.
+
+## Related work
+
+[psychictells-ai-test-agent](https://github.com/AadiP9/psychictells-ai-test-agent): a Python/Playwright test agent that uses Gemini to generate and run end-to-end tests.
 
 ## Data and references
 
